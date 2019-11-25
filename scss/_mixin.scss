@@ -1,0 +1,26 @@
+
+@mixin grid-unit($span) {
+  float: left;
+  margin-right: $gutter-width;
+  width: ($column-width * $span) + ($gutter-width * ($span - 1)) !important;
+}
+
+@mixin display-flex {
+  display: flex !important;
+}
+
+@mixin display-none {
+  display: none !important;
+}
+
+@mixin display-block {
+  display: block !important;
+}
+
+@mixin display-inline {
+  display: inline;
+}
+
+@mixin display-inline-block {
+  display: inline-block;
+}
